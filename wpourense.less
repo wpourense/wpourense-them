@@ -1,0 +1,219 @@
+/*--------------------------------------------------------------
+## COLORS
+--------------------------------------------------------------*/
+
+@baseColour: #00a0d2;
+@headTxtColour: #fff;
+@footerColour: #006789;
+@footerTxtColour: #fff;
+@menuLinkColour: #fff;
+@linkColour: #007197;
+@colorMenuToggle: #006789;
+@colorTextMenuToggle: #fff;
+@colorItemsMenuToggled: #eee;
+/*--------------------------------------------------------------
+## Links
+--------------------------------------------------------------*/
+
+a {
+  color: @linkColour;
+  text-decoration: none;
+}
+a:visited {
+  color: @linkColour;
+}
+a:hover,
+a:focus,
+a:active {
+  color: @linkColour;
+}
+a:focus {
+  outline: thin dotted;
+}
+a:hover,
+a:active {
+  outline: 0;
+}
+h1.entry-title,
+h2 {
+  color: #007197
+}
+/*--------------------------------------------------------------
+* PAGE LAYOUT FLEXBOX
+ --------------------------------------------------------------*/
+
+
+#wrapperpage {
+  display: flex;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+#primary {
+  flex: 0 0 75%;
+}
+#secondary {
+  flex: 0 0 24%;
+  margin-left: 1%;
+}
+/*--------------------------------------------------------------
+* POST STYLES
+ --------------------------------------------------------------*/
+
+h2.entry-title {
+  font-size: 2rem;
+}
+.comments-link {
+  margin-left: 10px;
+  margin-right: 10px
+}
+.meetup .mapa {
+  float: left;
+  width: 49%;
+  margin-right: 1%;
+}
+.meetup .info {
+  float: right;
+  width: 50%
+}
+/*--------------------------------------------------------------
+* HEAD STYLES
+ --------------------------------------------------------------*/
+
+
+#masthead {
+  background-color: @baseColour;
+  margin-bottom: 10px;
+  padding: 0 40px 0 40px;
+}
+#masthead p.site-title a,
+#masthead h1 a {
+  color: @headTxtColour;
+}
+/*--------------------------------------------------------------
+* FOOTER STYLES
+ --------------------------------------------------------------*/
+
+
+#colophon {
+  background-color: @footerColour;
+  color: @footerTxtColour;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.3em
+}
+#colophon a {
+  color: @footerTxtColour;
+}
+#colophon ul.contacto,
+#colophon ul.patrocinadores {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0
+}
+#colophon ul.contacto li,
+#colophon ul.patrocinadores li {
+  margin-top: 5px;
+  margin-bottom: 10px;
+  margin: 10px
+}
+#colophon ul.patrocinadores img {
+  width: 200px
+}
+#colophon h2 {
+  color: #fff
+}
+/*--------------------------------------------------------------
+  * MAIN MENU STYLES
+--------------------------------------------------------------*/
+
+#primary-menu li a {
+  color: @menuLinkColour
+}
+#site-navigation button.menu-togle {}
+/*--------------------------------------------------------------
+* SIDEBAR STYLES
+ --------------------------------------------------------------*/
+
+
+#secondary .patrocinador {
+  width: 90%;
+  margin: 0 auto;
+}
+#secondary section .textwidget {
+  text-align: center
+}
+/*--------------------------------------------------------------
+* BUTTONS STYLES
+ --------------------------------------------------------------*/
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  border: 1px solid;
+  border-color: #00a0d2;
+  background: #00a0d2;
+  color: #fff;
+  font-size: 1em;
+  line-height: 1;
+  padding: 1.2em;
+}
+/*--------------------------------------------------------------
+* FORM STYLES
+ --------------------------------------------------------------*/
+
+form span input {
+  width: 100%
+}
+/*--------------------------------------------------------------
+* COMMENTS STYLES
+ --------------------------------------------------------------*/
+
+
+#comments form input {
+  width: 100%
+}
+@media screen and (max-width: 37.5em) {
+  /*--------------------------------------------------------------
+  * HEAD STYLES
+  --------------------------------------------------------------*/
+
+
+  #masthead {
+    padding: 0
+  }
+  #masthead button.menu-toggle {
+    width: 100%;
+    background-color: @colorMenuToggle;
+    color: @colorTextMenuToggle
+  }
+  #primary-menu li {
+    line-height: 2.5em;
+    width: 100%;
+    background-color: @colorItemsMenuToggled;
+  }
+  #primary-menu li a {
+    color: @colorMenuToggle
+  }
+  #colophon,
+  #colophon ul.contacto,
+  #colophon ul.patrocinadores,
+  #wrapperpage {
+    display: block;
+  }
+  button,
+  input[type="button"],
+  input[type="reset"],
+  input[type="submit"] {
+    width: 100%
+  }
+  .meetup .mapa,
+  .meetup .info {
+    width: 100%;
+    margin: 0;
+    float: none
+  }
+}
