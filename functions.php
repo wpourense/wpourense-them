@@ -6,7 +6,7 @@
  *
  * @package wordpressourense
  */
-
+define("_DEF_THEME_WPOURENSE_VERSION","1.01");
 function analytics_tracking_code(){
     echo "<script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -37,7 +37,7 @@ function enqueue_assets(){
 
 
     //CSS Wp ourense
-    wp_enqueue_style( 'estoesboda-css',get_template_directory_uri()."/wpourense.css" );
+    wp_enqueue_style( 'wpourense-css',get_template_directory_uri()."/wpourense.css" ,"",_DEF_THEME_WPOURENSE_VERSION);
 
     //Google maps
     wp_enqueue_script('google-maps',"https://maps.googleapis.com/maps/api/js?key=AIzaSyDoqzZH8ADsIXx_UCqdaOBI3RWmGUU");

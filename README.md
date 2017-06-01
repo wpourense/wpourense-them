@@ -34,6 +34,13 @@ GNU General Public License para más detalles.
 
 Versión inicial, producto mínimo viable para la puesta en pruducción de wpourense.org
 
+### 1.01 
+* Fecha: Jun 01, 2017
+Añadida constante con versión del theme para forzar refresco de carga de fichero css
+
+Estilos de título de Widgets en para igualar la alineación con el título del contenido principal
+
+
 
 ## TO-DO
 ###Eliminar valores harcodeados:
